@@ -1,0 +1,30 @@
+.navbar {
+  background: rgb(9 26 27 / 92%);
+  padding: 20px;
+
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  color: #EAF3F1;
+}
+
+
+.menulist ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  float: right;
+}
+
+.menulist ul input {
+  width: 170px;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+
+}
