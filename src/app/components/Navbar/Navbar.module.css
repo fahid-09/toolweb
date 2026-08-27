@@ -2,7 +2,6 @@
   background: rgb(9 26 27 / 92%);
   padding: 20px 0;
 }
-
 .navbaritems {
   display: flex;
   align-items: center;
@@ -13,14 +12,15 @@
   color: #eaf3f1;
 }
 
-.menulist > ul {
+.menulist>ul {
   display: flex;
   align-items: center;
   gap: 30px;
+  font-size: 14.5px;
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #eaf3f1;
+  color: #eaf3f1
 }
 
 .menulist li {
@@ -31,7 +31,6 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  
   text-decoration: none;
   cursor: pointer;
 }
@@ -57,7 +56,6 @@
   height: 34px;
   background-color: #e8a33d;
   border-radius: 5px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,9 +79,11 @@
   position: absolute;
   top: 100%;
   left: 0;
-  width: 500px;
+  width: 553px;
   background: #153436;
   padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
 .submenulist {
@@ -94,9 +94,11 @@
   flex-direction: column;
   gap: 0 !important;
 }
+
 .dropdown:hover .submenu {
   display: flex;
 }
+
 .submenulist li {
   width: 100%;
   padding: 12px 15px;
