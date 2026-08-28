@@ -1,0 +1,86 @@
+import Calculator from "../Calculator/Calculator";
+import JPGtoPDF from "../JPGToPDF/JPGtoPDF";
+import styles from "./Hero.module.css";
+import { Zap } from "lucide-react";
+
+
+const Homepage = () => {
+    return (<>
+        <section className={styles.herosection}>
+            <div className="row">
+                <div className="col-6"><span className={styles.herotext}><hr></hr>Convert PDF · calculators · body tests</span>
+                    <div className={styles.biggertext}>
+                        <h1>Every conversion,<br />
+                            read like an <em>instrument.</em></h1>
+                        <p>Conversion Web converts JPG, Word, PowerPoint, Excel and HTML to and from PDF right in your browser, alongside arithmetic, scientific and equation calculators, temperature and time conversion, and quick body-metric tests like blood pressure, blood sugar and BMI — all in one panel.
+                        </p>
+
+                    </div>
+                    <div className="row g-2">
+                        <div className="col-6">
+                            <button className={styles.convertbutton}>
+                                <Zap strokeWidth={0.8} style={{ width: "18px", height: "16px" }} />
+                                Convert a Document
+                            </button>
+                        </div>
+
+                        <div className="col-6">
+                            <button className={styles.signinbutton}>
+                                Create an account
+                            </button>
+                        </div>
+                    </div>
+                    <div className="row g-2 mt-3" style={{ color: "#6FD9C4" }}>
+                        <div className="col-4">
+                            <h4>19</h4>
+                            <p style={{ fontSize: "12px" }}>working instruments</p>
+                        </div>
+
+                        <div className="col-4">
+                            <h4>0.0s</h4>
+                            <p style={{ fontSize: "12px" }}>Server round trip</p>
+                        </div>
+                        <div className="col-4">
+                            <h4>100%</h4>
+                            <p style={{ fontSize: "12px" }}>Runs in-browser</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="col-6"><span className={styles.herotext}><hr></hr>Tools · calculators</span>
+                    <div className={styles.calbiggertext}>
+                        <h4>Standard calculator  </h4>
+                        <p>Four-function calculator. Chain operations the way you would on a desk calculator.</p>
+
+                    </div>
+
+                    <Calculator />
+
+                </div>
+            </div>
+
+        </section>
+
+        <section className={styles.herosection}>
+            <div className="row">
+                <div><span className={styles.herotext}><hr></hr>Convert PDF</span>
+                    <div className={styles.biggertext}>
+                        <h1>Convert to and from PDF</h1>
+                        <p>Runs fully in your browser — files never leave your device. Text-based tools<br /> (Word/Excel/PowerPoint ⇄ PDF) extract and rebuild content rather than pixel-copying it,<br />so complex layouts may need light cleanup afterward. </p>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div><span className={styles.herotext}><hr></hr>Convert PDF</span>
+                    <div className={styles.pdfbiggertext}>
+                        <p>Convert to PDF</p>
+                    </div>
+                    <JPGtoPDF/>
+                </div>
+            </div>
+        </section>
+
+    </>)
+}
+
+export default Homepage;

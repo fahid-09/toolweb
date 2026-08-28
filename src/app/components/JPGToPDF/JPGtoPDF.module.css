@@ -1,0 +1,29 @@
+.number{
+    width: 25px;
+    height: 25px;
+    color: #E8A33D;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.text{
+    font-size: 19px;
+    margin-left: 10px;
+    font-weight: 600;
+    color: white;
+}
+.cardsection{
+    width: 100%;
+    background: #153436;
+    border: 1px solid rgb(234 243 241 / 12%);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: var(--shadow);
+    height: 100%;
+}
+.cardsection p{
+   
+    color: #9fbdbb;
+    margin: 2px 0 0 43px;
+    font-size: 13px;
+}

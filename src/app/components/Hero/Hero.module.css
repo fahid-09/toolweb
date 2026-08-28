@@ -1,0 +1,89 @@
+.heading {
+    font-size: 35px;
+    color: white;
+}
+
+.herosection {
+    margin-top: 20px;
+    padding: 20px 200px 0;
+
+}
+
+.herotext {
+    width: auto;
+    color: #E8A33D;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+.pdfbiggertext{
+    font-size: 20px;
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 22px;
+    color: white;
+}
+.biggertext h1 {
+    font-size: 46px;
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 22px;
+    color: white;
+}
+.calbiggertext h4{
+    font-size: 30px;
+     line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 22px;
+    color: white;
+}
+.calbiggertext p{
+     font-size: 16.5px;
+    line-height: 1.7;
+    margin: 0 0 32px;
+    font-style: normal;
+    color: #9FBDBB;
+}
+
+.biggertext h1 em {
+    font-style: normal;
+    color: #E8A33D;
+}
+
+.herosection hr {
+    width: 20px;
+    height: 1px;
+    margin-right: 10px;
+
+}
+
+.biggertext p {
+    font-size: 16.5px;
+    line-height: 1.7;
+    margin: 0 0 32px;
+    font-style: normal;
+    color: #9FBDBB;
+}
+
+.convertbutton {
+    width: 95%;
+    background: #E8A33D;
+    color: #241705;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+}
+.signinbutton{
+    width: 95%;
+    background: #0E2426;;
+    color: white;
+    padding: 14px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.signinbutton:hover{
+    background-color: #153436;
+}
