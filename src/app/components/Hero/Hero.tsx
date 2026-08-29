@@ -70,14 +70,48 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-            <div className="row">
-                <div><span className={styles.herotext}><hr></hr>Convert PDF</span>
-                    <div className={styles.pdfbiggertext}>
-                        <p>Convert to PDF</p>
-                    </div>
-                    <JPGtoPDF/>
-                </div>
+            <div className={styles.pdfbiggertext} style={{ display: "flex" }}>
+
+                <p className={styles.outText}>Convert to PDF</p>
             </div>
+            <div className="row">
+                <div className="col-6">
+
+                    <section className={styles.cardsection}>
+                        <div>
+
+                            <span className={styles.number}>01</span>
+                            <span className={styles.text}>JPG to PDF</span>
+
+                            <p className={styles.uppertext}>Combine one or more images into a single PDF</p>
+
+                            <JPGtoPDF />
+                            <hr className={styles.hrDevider}></hr>
+                            <p className={styles.lowertext}>Scanning an InPage (.inp) document? InPage's format is closed with no browser-readable library available, so export or print its pages as images first, then combine them here.</p>
+                        </div>
+                    </section>
+                </div>
+                <div className="col-6">
+
+                    <section className={styles.cardsection}>
+                        <div>
+
+                            <span className={styles.number}>01</span>
+                            <span className={styles.text}>Word to PDF</span>
+
+                            <p className={styles.uppertext}>Combine one or more images into a single PDF</p>
+
+                            <JPGtoPDF />
+                            <hr className={styles.hrDevider}></hr>
+                            <p className={styles.lowertext}>Scanning an InPage (.inp) document? InPage's format is closed with no browser-readable library available, so export or print its pages as images first, then combine them here.</p>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            
+
+
         </section>
 
     </>)
