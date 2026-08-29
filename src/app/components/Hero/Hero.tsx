@@ -1,5 +1,6 @@
 import Calculator from "../Calculator/Calculator";
 import JPGtoPDF from "../JPGToPDF/JPGtoPDF";
+import WordtoPDF from "../WordtoPDF/WordtoPDF";
 import styles from "./Hero.module.css";
 import { Zap } from "lucide-react";
 
@@ -101,7 +102,7 @@ const Homepage = () => {
 
                             <p className={styles.uppertext}>Combine one or more images into a single PDF</p>
 
-                            <JPGtoPDF />
+                            <WordtoPDF />
                             <hr className={styles.hrDevider}></hr>
                             <p className={styles.lowertext}>Scanning an InPage (.inp) document? InPage's format is closed with no browser-readable library available, so export or print its pages as images first, then combine them here.</p>
                         </div>
