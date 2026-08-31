@@ -3,10 +3,30 @@ import JPGtoPDF from "../JPGToPDF/JPGtoPDF";
 import WordtoPDF from "../WordtoPDF/WordtoPDF";
 import styles from "./Hero.module.css";
 import { Zap } from "lucide-react";
+// import cards from "../cards";
+// import Link from "next/link";
 
 
 const Homepage = () => {
+
+
     return (<>
+
+{/* <div className="row">
+  {cards.cardsarray.map((card) => {
+    return (
+      <div className="col-4" key={card.id}>
+        <Link href={card.url}>
+          <div className="card">
+            <h3>{card.name}</h3>
+            <p>{card.description}</p>
+          </div>
+        </Link>
+      </div>
+    );
+  })}
+</div> */}
+
         <section className={styles.herosection}>
             <div className="row">
                 <div className="col-6"><span className={styles.herotext}><hr></hr>Convert PDF · calculators · body tests</span>
@@ -110,10 +130,12 @@ const Homepage = () => {
                 </div>
 
             </div>
-            
+
 
 
         </section>
+
+
 
     </>)
 }

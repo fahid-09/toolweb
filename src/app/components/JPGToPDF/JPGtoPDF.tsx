@@ -37,50 +37,50 @@ const JPGtoPDF = () => {
     return (
         <>
             <div className="row">
-               
-                    <section className={styles.inputSection}>
-                        <div className="row">
-                            <div className="col-9">
 
-                                <ImageIcon className={styles.foldersvg} />
+                <section className={styles.inputSection}>
+                    <div className="row">
+                        <div className="col-9">
 
-                                <label className={styles.upload}>
-                                    {image
-                                        ? `${image.name.replace(/\.[^/.]+$/, "")}.pdf`
-                                        : "choose one or more images"}
+                            <ImageIcon className={styles.foldersvg} />
 
-                                    <input
-                                        type="file"
-                                        accept="image/*"
-                                        onChange={(e) =>
-                                            setImage(e.target.files?.[0] || null)
-                                        }
-                                    />
-                                </label>
+                            <label className={styles.upload}>
+                                {image
+                                    ? `${image.name.replace(/\.[^/.]+$/, "")}.pdf`
+                                    : "choose one or more images"}
 
-                            </div>
+                                <input
+                                    type="file"
+                                    accept="image/*"
+                                    onChange={(e) =>
+                                        setImage(e.target.files?.[0] || null)
+                                    }
+                                />
+                            </label>
 
-                            <div className="col-3">
-                                {!pdfurl && (
-                                    <button onClick={convertToPDF}>
-                                        Convert
-                                    </button>
-                                )}
-
-                                {pdfurl && (
-                                    <a
-                                        href={pdfurl}
-                                        className={styles.downloadButton}
-                                        download={`${image?.name.replace(/\.[^/.]+$/, "")}.pdf`}
-                                    >
-                                        Download
-                                    </a>
-                                )}
-                            </div>
                         </div>
 
-                    </section>
-              
+                        <div className="col-3">
+                            {!pdfurl && (
+                                <button onClick={convertToPDF}>
+                                    Convert
+                                </button>
+                            )}
+
+                            {pdfurl && (
+                                <a
+                                    href={pdfurl}
+                                    className={styles.downloadButton}
+                                    download={`${image?.name.replace(/\.[^/.]+$/, "")}.pdf`}
+                                >
+                                    Download
+                                </a>
+                            )}
+                        </div>
+                    </div>
+
+                </section>
+
             </div>
         </>
     );
