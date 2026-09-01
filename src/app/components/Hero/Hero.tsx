@@ -1,5 +1,7 @@
 import Calculator from "../Calculator/Calculator";
+import ExcelToPDF from "../ExcelToPDF/ExceltoPDF";
 import JPGtoPDF from "../JPGToPDF/JPGtoPDF";
+import PowerPointtoPDF from "../PowerpointToPDF/powerpointtopdf";
 import WordtoPDF from "../WordtoPDF/WordtoPDF";
 import styles from "./Hero.module.css";
 import { Zap } from "lucide-react";
@@ -12,7 +14,7 @@ const Homepage = () => {
 
     return (<>
 
-{/* <div className="row">
+        {/* <div className="row">
   {cards.cardsarray.map((card) => {
     return (
       <div className="col-4" key={card.id}>
@@ -117,22 +119,44 @@ const Homepage = () => {
                     <section className={styles.cardsection}>
                         <div>
 
-                            <span className={styles.number}>01</span>
+                            <span className={styles.number}>02</span>
                             <span className={styles.text}>Word to PDF</span>
 
-                            <p className={styles.uppertext}>Combine one or more images into a single PDF</p>
+                            <p className={styles.uppertext}>Renders a .docx file into a downloadable PDF</p>
 
                             <WordtoPDF />
                             <hr className={styles.hrDevider}></hr>
-                            <p className={styles.lowertext}>Scanning an InPage (.inp) document? InPage's format is closed with no browser-readable library available, so export or print its pages as images first, then combine them here.</p>
+                            <p className={styles.lowertext}>Supports modern .docx files (not the older binary .doc format).</p>
                         </div>
                     </section>
                 </div>
 
+                <div className="col-6">
+                    <section className={styles.cardsection}>
+                        <div>
+                            <span className={styles.number}>03</span>
+                            <span className={styles.text}>Power Point to PDF</span>
+                            <p className={styles.uppertext}>Extracts slide text and lays it out as PDF pages</p>
+                            <PowerPointtoPDF />
+                            <hr className={styles.hrDevider}></hr>
+                            <p className={styles.lowertext}>Text only — slide designs, images and transitions aren't preserved.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div className="col-6">
+                    <section className={styles.cardsection}>
+                        <div>
+                            <span className={styles.number}>03</span>
+                            <span className={styles.text}>Excel to PDF</span>
+                            <p className={styles.uppertext}>Renders each sheet as a table in a PDF</p>
+                            <ExcelToPDF />
+                            <hr className={styles.hrDevider}></hr>
+                            <p className={styles.lowertext}>Best for straightforward tables; very wide sheets may wrap across the page.</p>
+                        </div>
+                    </section>
+                </div>
             </div>
-
-
-
         </section>
 
 
